@@ -1,0 +1,14 @@
+package com.dover.dayonetwo;
+
+public class average {
+	public static void main(String arg[])
+	{
+		int a=1;
+		double b=1.1;
+		float c=1.2f;
+		double avr=a+b+c;
+		double/=3;
+		System.out.print(avr);
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.dover.dayonetwo;
+
+public class summinmax {
+	public static void main(String arg[])
+	{
+	  int[] arr=new int[5];
+	}
+
+}

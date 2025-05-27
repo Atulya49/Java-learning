@@ -1,0 +1,22 @@
+package com.dover.dayonetwo;
+
+public class PrimitiveTypes {
+	
+	public static void main(String[] arg)
+	{
+		int a=1;
+		char c='a';
+		boolean x=true;
+		double d=3.0;
+		lomg long b=1L;
+		
+		System.out.print("integer value:"+ a);
+		System.out.print("Character value:"+ c);
+		System.out.print("boolean value:"+ x);
+		System.out.print("double value:"+ d);
+		System.out.print("long value:"+ b);
+		
+	}
+
+}
+

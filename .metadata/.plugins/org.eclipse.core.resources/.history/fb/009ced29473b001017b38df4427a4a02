@@ -1,0 +1,21 @@
+package com.dover.dayonetwo;
+
+public class summinmax {
+	public static void main(String arg[])
+	{
+	  int[] arr= {1,2,3,4,5};
+	  int sum=0;
+	  int ma=INT_MIN;
+	  int mi=INT_MAX;
+	  for(int i=0;i<5;i++) {
+		sum+=arr[i];
+		ma=max(ma,arr[i]);
+        mi=min(mi,arr[i]);		
+	  }
+	 System.out.print("sum=" + sum);
+	 System.out.print("maximum=" + ma);
+	 System.out.print("minimum=" + mi);
+	 
+	}
+
+}
