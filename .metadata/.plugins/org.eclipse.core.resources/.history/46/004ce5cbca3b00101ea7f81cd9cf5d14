@@ -1,0 +1,19 @@
+package com.dover.dayonetwo;
+
+public class Studentdetails
+ {
+	int age=10;
+	String s="Atul";
+	char c='P';
+	public void show()
+	{
+		System.out.println(this.age);
+		System.out.println(s);
+		System.out.println(c);
+	}
+	public static void main(String args[])
+	{
+		Studentdetails x=new Studentdetails();
+		x.show();
+	}
+ }

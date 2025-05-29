@@ -1,0 +1,22 @@
+package com.dover.dayonetwo;
+
+public class Studentdetails
+ {
+	//If u want to dont intialize the value use constructor to do it and pass 
+	//when the method is called. 
+	//inside constructor use this. to access instance variable
+	int age=10;
+	String s="Atul";
+	char c='P';
+	public void show()
+	{
+		System.out.println(this.age);
+		System.out.println(s);
+		System.out.println(c);
+	}
+	public static void main(String args[])
+	{
+		Studentdetails x=new Studentdetails();
+		x.show();
+	}
+ }

@@ -1,0 +1,25 @@
+package com.dover.dayonetwo;
+
+public class Electricitybill {
+	static int x=0;
+	double amount;
+	public Electricitybill(double amount){
+		this.amount=amount;
+		x++;
+	}
+	
+	public static int gettotalbill()
+	{
+		return x;
+	}
+	
+	public static void main(String arg[])
+	{
+		Electricitybill b1 = new Electricitybill(150.1);
+		Electricitybill b2 = new Electricitybill(27.9);
+		Electricitybill b3= new Electricitybill(101.35);
+		
+	System.out.println("Total bills generated "+ Electricitybill.gettotalbill());
+	}
+}
+}

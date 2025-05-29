@@ -1,0 +1,46 @@
+package com.dover.dayonetwo;
+
+public class BankAccount {
+	private String accountNumber;
+	private String accountHolder;
+	private double balance;
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+	public void setAccountHolder(String accountHolder) {
+		this.accountHolder = accountHolder;
+	}
+	public void deposit(double amount)
+	{
+		if(amount>0)
+		{
+			balance+=amount;
+		}
+	}
+	public void withdraw(double amount)
+	{
+		if(amount<=balance && amount>0)
+		{
+			balance-=amount;
+		}
+	}
+	public void accountDetails()
+	{
+		System.out.println("Account Number: "+ accountNumber);
+		System.out.println("Account Holder: "+ accountHolder);
+		System.out.println("Balance: "+ balance);
+		
+	}
+  public static void main(String[] args)
+  {
+	  BankAccount a1=new BankAccount();
+	  a1.setAccountNumber("100068");
+	  a1.setAccountHolder("Atulya");
+	  a1.deposit(10001);
+	  a1.withdraw(1);
+	  a1.accountDetails();
+	  System.out.println();
+	  a1.withdraw(20000);
+	  a1.accountDetails();
+  }
+}
